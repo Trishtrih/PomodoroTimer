@@ -1,0 +1,137 @@
+.Clock{
+  position: relative;
+  margin: 0px auto;
+
+  width: 500px;
+  height: 500px;
+}
+
+body{
+  background-color: black;
+}
+.UpperSide{
+
+  background-color: red;
+  width: 100%;
+  height: 60%;
+  border-radius: 25px 25px 0px 0px;
+
+}
+
+.DownSide{
+  background-color: white;
+
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 40%;
+  border-radius:0px 0px 25px 25px;
+}
+.buttonStart{
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  left: 125px;
+  width: 100px;
+  height: 40px;
+
+  border: solid transparent;
+}
+
+.buttonStart:hover, .buttonStop:hover{
+  background-color: black;
+  color: white;
+}
+
+.buttonStart:active, .buttonStop:active{
+  background-color: white;
+  color: black;
+}
+
+.buttonStop{
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  right: 125px;
+  width: 100px;
+  height: 40px;
+
+  border: solid transparent;
+}
+
+
+
+.buttonUp{
+  margin-left: 110px;
+  padding: 0;
+  background-color:transparent;
+  border: 15px solid transparent;
+  border-bottom: 15px solid #caa777;
+  outline:none;
+}
+
+.buttonUp:hover{
+  border-bottom: 15px solid #a17d4c;
+}
+
+.buttonUp:active{
+  border-bottom: 15px solid #caa777;
+}
+
+
+.buttonDown{
+  margin-left: 110px;
+  padding: 0;
+  background-color:transparent;
+  border: 15px solid transparent;
+  border-top: 15px solid #caa777;
+  outline:none;
+}
+
+.buttonDown:hover{
+  border-top: 15px solid #a17d4c;
+}
+
+.buttonDown:active{
+  border-top: 15px solid #caa777;
+}
+
+#Timer{
+  position: relative;
+  color: white;
+  text-align: center;
+  margin: 0px auto;
+  font-size: 150px;
+
+
+}
+
+.SettedSession{
+  position: absolute;
+
+  bottom: 0px;
+  left: 0px;
+  width: 50%;
+}
+.SettedBreak{
+  position: absolute;
+
+  bottom: 0px;
+  left: 50%;
+  width: 50%;
+}
+
+
+.Min{
+  position: relative;
+  left: 47.5%;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+
+.BT{
+
+  margin-left: 50%;
+}

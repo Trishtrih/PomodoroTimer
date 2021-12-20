@@ -5,24 +5,25 @@
   <meta charset="utf-8">
   <title>Pomodoro Clock</title>
   <link rel="stylesheet" href="css/Clock.css">
+  <link rel="stylesheet" href="css/ToDo.css">
 </head>
 
 <body>
 
 
-
+<div>
   <div class="Clock">
 
     <div class="UpperSide">
-        <p id="Pointer" style="font-size: 30px;text-align: center;color: white">Session</p>
-        <p id="Timer">00:00</p>
-        <button class="buttonStart" onclick="StartPomodoroSession()">Start</button>
-        <button class="buttonStop" onclick="Stop()">Stop</button>
+      <p id="Pointer" style="font-size: 30px;text-align: center;color: white">Session</p>
+      <p id="Timer">00:00</p>
+      <button class="buttonStart" onclick="StartPomodoroSession()">Start</button>
+      <button class="buttonStop" onclick="Stop()">Stop</button>
 
     </div>
 
     <div class="DownSide">
-     <div class="SettedSession">
+      <div class="SettedSession">
         <p style="text-align: center;font-weight: bold;font-size: 20px">Session length</p>
         <button class="buttonUp" onclick="PlusOneSession()"></button>
         <p id="SettedMinSession" class="Min">1</p>
@@ -30,18 +31,35 @@
       </div>
 
       <div class="SettedBreak">
-       <p style="text-align: center;font-weight: bold;font-size: 20px">Break length</p>
-       <button class="buttonUp" onclick="PlusOneBreak()"></button>
-       <p id="SettedMinBreak" class="Min">1</p>
-       <button class="buttonDown" onclick="MinusOneBreak()"></button>
+        <p style="text-align: center;font-weight: bold;font-size: 20px">Break length</p>
+        <button class="buttonUp" onclick="PlusOneBreak()"></button>
+        <p id="SettedMinBreak" class="Min">1</p>
+        <button class="buttonDown" onclick="MinusOneBreak()"></button>
       </div>
     </div>
 
+  </div>
+
+  <div class="ToDo">
+
+    <div class="UpSide">
+      <input id="input"  type="text">
+      <button class="AddInList" onclick="AddInList()">Add</button>
+    </div>
+
+    <div style="height: 80%" class="DownSide">
+      <ul id="ToDoList">
+      </ul>
+    </div>
+
+
 
   </div>
+</div>
 
   <script src="js/main.js"></script>
   <script src="js/PomodoroClock.js"></script>
+  <script src="js/ToDo.js"></script>
 </body>
 
 </html>
